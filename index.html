@@ -44,12 +44,45 @@
 		                    <li id="fat-menu" class="dropdown">
 		                      <a href="#" id="drop3" role="button" class="dropdown-toggle main-nav-item" data-toggle="dropdown">Atenci&oacute;n a clientes <b class="caret"></b></a>
 		                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
-		                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Llamanos</a></li>
-		                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Contactanos</a></li>
-		                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Danos tu opinion</a></li>		                       
+		                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#contactanos-modal" data-toggle="modal">Llamanos</a></li>
+		                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#contactanos-modal" data-toggle="modal">Contactanos</a></li>
+		                      	                       
 		                      </ul>
 		                    </li>
 		                  </ul>
+		                  			<!-- Button to trigger modal -->
+							
+							 
+							<!-- Modal -->
+							<div id="contactanos-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							  <div class="modal-header">
+							    <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>-->
+							    <h3 id="myModalLabel">Contactanos</h3>
+							  </div>
+							  <div class="modal-body">
+							    <p>One fine body</p>
+
+							    <form class="form-horizontal">
+								  <div class="control-group">
+								    <label class="control-label" for="inputEmail">Email</label>
+								    <div class="controls">
+								      <input type="text" id="inputEmail" placeholder="Email">
+								    </div>
+								  </div>
+								  <div class="control-group">
+								    <label class="control-label" for="inputPassword">Password</label>
+								    <div class="controls">
+								      <input type="password" id="inputPassword" placeholder="Password">
+								    </div>
+								  </div>
+								  
+								</form>
+							  </div>
+							  <div class="modal-footer">
+							    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+							    <button class="btn btn-primary">Enviar</button>
+							  </div>
+							</div>
 		                </div>
 		              </div>
 		            </div>
@@ -79,215 +112,220 @@
 			</div>
 			<!--Inicio cotizar-->
 			<div class="row">
-				<div class="bs-docs-example span12" id="tabs-border">
+				<div class="span12" id="tabs-border">
 		            <ul id="flota-header" class="nav nav-tabs">
-		              <li class="active"><a href="#home" data-toggle="tab">Flota</a></li>
-		              <li class=""><a href="#profile" data-toggle="tab">Cotizar</a></li>
+		              <li class="active"><a href="#flota" data-toggle="tab">Flota</a></li>
+		              <li class=""><a href="#cotizar" data-toggle="tab">Cotizar</a></li>
+		              <li class=""><a href="#reservar" data-toggle="tab">Reservar</a></li>
 		             </ul>
             <div id="myTabContent" class="tab-content">
-              <div class="tab-pane fade active in" id="home">
-                
-			<div class="row" id="flota">
-				<div class="span12">
-						<div  class="tabbable tabs-left" >
-			              <ul class="nav nav-tabs span3" id="flota-menu">
-			                <li class="active"><a href="#lA" data-toggle="tab">Economico</a></li>
-			                <li class=""><a href="#lB" data-toggle="tab">Compacto</a></li>
-			                <li class=""><a href="#lC" data-toggle="tab">Mediano</a></li>
-			                <li class=""><a href="#lD" data-toggle="tab">Minivan</a></li>
-			              </ul>
+		        <div class="tab-pane fade active in" id="flota">
+		                
+					<div class="row" id="flota-wrap">
+						<div class="span12">
+								<div  class="tabbable tabs-left" >
+					              <ul class="nav nav-tabs span3" id="flota-menu">
+					                <li class="active"><a href="#lA" data-toggle="tab">Economico</a></li>
+					                <li class=""><a href="#lB" data-toggle="tab">Compacto</a></li>
+					                <li class=""><a href="#lC" data-toggle="tab">Mediano</a></li>
+					                <li class=""><a href="#lD" data-toggle="tab">Minivan</a></li>
+					              </ul>
 
-			              <div class="tab-content" id="flota-content">
-			                <div class="tab-pane active" id="lA">
-			                	<div class="span4" id="pading-automovil">
-			                	<img src="img/auto/chevy.jpg" class="img-polaroid">
-			                	</div>
-			                	<div class="span4">
-			                		<table class="table table-striped right" id="details-catalogo">
-						              <thead>
-						                <tr>
-						                 <th colspan="2">Caracteristicas</th>
-						                </tr>
-						              </thead>
-							              <tbody>
+					              <div class="tab-content" id="flota-content">
+					                <div class="tab-pane active" id="lA">
+					                	<div class="span4" id="pading-automovil">
+					                	<img src="img/auto/chevy.jpg" class="img-polaroid">
+					                	</div>
+					                	<div class="span4">
+					                		<table class="table table-striped right" id="details-catalogo">
+								              <thead>
 								                <tr>
-								          			<td>Pasajeros</td>
-								                    <td>4</td>
+								                 <th colspan="2">Caracteristicas</th>
 								                </tr>
-								                <tr>
-								               		<td>Puertas</td>
-								                    <td>4</td>
-								                </tr>
-								                <tr>
-								                	<td>Cilindros</td>
-								                  	<td>4</td>
-								                </tr>
-								                <tr>
-								                	<td>Aire/Acondicionado</td>
-								                    <td>si</td>
-								                </tr>
-								                <tr>
-								                 	<td>Transmision</td>
-								                    <td>Manual</td>
-								                </tr>
-								                <tr>
-								                 	<td>Equipaje</td>
-								                    <td>4 <i class="icon-briefcase"></td>
-								                </tr>
-								                 <tr >
-								                	<td><button type="button" class="btn btn-primary"><a href="cotizar.html">Cotizar</a></button></td>
-								                	<td></td>
-								                </tr>
-							              </tbody>
-						            </table>
+								              </thead>
+									              <tbody>
+										                <tr>
+										          			<td>Pasajeros</td>
+										                    <td>4</td>
+										                </tr>
+										                <tr>
+										               		<td>Puertas</td>
+										                    <td>4</td>
+										                </tr>
+										                <tr>
+										                	<td>Cilindros</td>
+										                  	<td>4</td>
+										                </tr>
+										                <tr>
+										                	<td>Aire/Acondicionado</td>
+										                    <td>si</td>
+										                </tr>
+										                <tr>
+										                 	<td>Transmision</td>
+										                    <td>Manual</td>
+										                </tr>
+										                <tr>
+										                 	<td>Equipaje</td>
+										                    <td>4 <i class="icon-briefcase"></td>
+										                </tr>
+										                 <tr >
+										                	<td><a class="btn" href="#cotizar" id="link-cotizar">Link</a>
+</td>
+										                	<td></td>
+										                </tr>
+									              </tbody>
+								            </table>
 
-			                	</div>
-			                 
-			                </div>
-			                <div class="tab-pane" id="lB">
-			                  <div class="span4" id="pading-automovil">
-			                	<img src="img/auto/tsuru.jpg" class="img-polaroid">
-			                	</div>
-			                	<div class="span4">
-			                		<table class="table table-striped right" id="details-catalogo">
-						              <thead>
-						                <tr>
-						                 <th colspan="2">Caracteristicas</th>
-						                </tr>
-						              </thead>
-							              <tbody>
+					                	</div>
+					                 
+					                </div>
+					                <div class="tab-pane" id="lB">
+					                  <div class="span4" id="pading-automovil">
+					                	<img src="img/auto/tsuru.jpg" class="img-polaroid">
+					                	</div>
+					                	<div class="span4">
+					                		<table class="table table-striped right" id="details-catalogo">
+								              <thead>
 								                <tr>
-								          			<td>Pasajeros</td>
-								                    <td>5</td>
+								                 <th colspan="2">Caracteristicas</th>
 								                </tr>
-								                <tr>
-								               		<td>Puertas</td>
-								                    <td>4</td>
-								                </tr>
-								                <tr>
-								                	<td>Cilindros</td>
-								                  	<td>4</td>
-								                </tr>
-								                <tr>
-								                	<td>Aire/Acondicionado</td>
-								                    <td>si</td>
-								                </tr>
-								                <tr>
-								                 	<td>Transmision</td>
-								                    <td>Manual</td>
-								                </tr>
-								                <tr>
-								                 	<td>Equipaje</td>
-								                    <td>4 <i class="icon-briefcase"></td>
-								                </tr>
-								                 <tr >
-								                	<td><button type="button" class="btn btn-primary">Cotizar</button></td>
-								                	<td></td>
-								                </tr>
-							              </tbody>
-						            </table>
+								              </thead>
+									              <tbody>
+										                <tr>
+										          			<td>Pasajeros</td>
+										                    <td>5</td>
+										                </tr>
+										                <tr>
+										               		<td>Puertas</td>
+										                    <td>4</td>
+										                </tr>
+										                <tr>
+										                	<td>Cilindros</td>
+										                  	<td>4</td>
+										                </tr>
+										                <tr>
+										                	<td>Aire/Acondicionado</td>
+										                    <td>si</td>
+										                </tr>
+										                <tr>
+										                 	<td>Transmision</td>
+										                    <td>Manual</td>
+										                </tr>
+										                <tr>
+										                 	<td>Equipaje</td>
+										                    <td>4 <i class="icon-briefcase"></td>
+										                </tr>
+										                 <tr >
+										                	<td><a class="btn" href="#cotizar">Ctizar</a>
+</td>
+										                	<td></td>
+										                </tr>
+									              </tbody>
+								            </table>
 
-			                	</div>
-			                </div>
-			                <div class="tab-pane" id="lC">
-								<div class="span4" id="pading-automovil">
-			                	<img src="img/auto/jetta.jpg" class="img-polaroid">
-			                	</div>
-			                	<div class="span4">
-			                		<table class="table table-striped right" id="details-catalogo">
-						              <thead>
-						                <tr>
-						                 <th colspan="2">Caracteristicas</th>
-						                </tr>
-						              </thead>
-							              <tbody>
+					                	</div>
+					                </div>
+					                <div class="tab-pane" id="lC">
+										<div class="span4" id="pading-automovil">
+					                	<img src="img/auto/jetta.jpg" class="img-polaroid">
+					                	</div>
+					                	<div class="span4">
+					                		<table class="table table-striped right" id="details-catalogo">
+								              <thead>
 								                <tr>
-								          			<td>Pasajeros</td>
-								                    <td>5</td>
+								                 <th colspan="2">Caracteristicas</th>
 								                </tr>
-								                <tr>
-								               		<td>Puertas</td>
-								                    <td>4</td>
-								                </tr>
-								                <tr>
-								                	<td>Cilindros</td>
-								                  	<td>4</td>
-								                </tr>
-								                <tr>
-								                	<td>Aire/Acondicionado</td>
-								                    <td>si</td>
-								                </tr>
-								                <tr>
-								                 	<td>Transmision</td>
-								                    <td>Manual</td>
-								                </tr>
-								                <tr>
-								                 	<td>Equipaje</td>
-								                    <td>4 <i class="icon-briefcase"></td>
-								                </tr>
-								                 <tr >
-								                	<td><button type="button" class="btn btn-primary">Cotizar</button></td>
-								                	<td></td>
-								                </tr>
-							              </tbody>
-						            </table>
+								              </thead>
+									              <tbody>
+										                <tr>
+										          			<td>Pasajeros</td>
+										                    <td>5</td>
+										                </tr>
+										                <tr>
+										               		<td>Puertas</td>
+										                    <td>4</td>
+										                </tr>
+										                <tr>
+										                	<td>Cilindros</td>
+										                  	<td>4</td>
+										                </tr>
+										                <tr>
+										                	<td>Aire/Acondicionado</td>
+										                    <td>si</td>
+										                </tr>
+										                <tr>
+										                 	<td>Transmision</td>
+										                    <td>Manual</td>
+										                </tr>
+										                <tr>
+										                 	<td>Equipaje</td>
+										                    <td>4 <i class="icon-briefcase"></td>
+										                </tr>
+										                 <tr >
+										                	<td><button type="button" class="btn btn-primary">Cotizar</button></td>
+										                	<td></td>
+										                </tr>
+									              </tbody>
+								            </table>
 
-			                	</div>
-			                </div>
-			                <div class="tab-pane" id="lD">
-								<div class="span4" id="pading-automovil">
-			                	<img src="img/auto/voyager.jpg" class="img-polaroid">
-			                	</div>
-			                	<div class="span4">
-			                		<table class="table table-striped right" id="details-catalogo">
-						              <thead>
-						                <tr>
-						                 <th colspan="2">Caracteristicas</th>
-						                </tr>
-						              </thead>
-							              <tbody>
+					                	</div>
+					                </div>
+					                <div class="tab-pane" id="lD">
+										<div class="span4" id="pading-automovil">
+					                	<img src="img/auto/voyager.jpg" class="img-polaroid">
+					                	</div>
+					                	<div class="span4">
+					                		<table class="table table-striped right" id="details-catalogo">
+								              <thead>
 								                <tr>
-								          			<td>Pasajeros</td>
-								                    <td>7</td>
+								                 <th colspan="2">Caracteristicas</th>
 								                </tr>
-								                <tr>
-								               		<td>Puertas</td>
-								                    <td>4</td>
-								                </tr>
-								                <tr>
-								                	<td>Cilindros</td>
-								                  	<td>4</td>
-								                </tr>
-								                <tr>
-								                	<td>Aire/Acondicionado</td>
-								                    <td>si</td>
-								                </tr>
-								                <tr>
-								                 	<td>Transmision</td>
-								                    <td>Automatica</td>
-								                </tr>
-								                <tr>
-								                 	<td>Equipaje</td>
-								                    <td>4 <i class="icon-briefcase"></td>
-								                </tr>
-								                <tr >
-								                	<td><button type="button" class="btn btn-primary">Cotizar</button></td>
-								                	<td></td>
-								                </tr>
-							              </tbody>
-						            </table>
-						        </div>
-						    </div>
-	             		 </div>
-           			 </div>
-           			  <!--  -->
-           		</div>
-           	</div>
-              </div>
-              <div class="tab-pane fade" id="profile">
-                
-              </div>
-              
+								              </thead>
+									              <tbody>
+										                <tr>
+										          			<td>Pasajeros</td>
+										                    <td>7</td>
+										                </tr>
+										                <tr>
+										               		<td>Puertas</td>
+										                    <td>4</td>
+										                </tr>
+										                <tr>
+										                	<td>Cilindros</td>
+										                  	<td>4</td>
+										                </tr>
+										                <tr>
+										                	<td>Aire/Acondicionado</td>
+										                    <td>si</td>
+										                </tr>
+										                <tr>
+										                 	<td>Transmision</td>
+										                    <td>Automatica</td>
+										                </tr>
+										                <tr>
+										                 	<td>Equipaje</td>
+										                    <td>4 <i class="icon-briefcase"></td>
+										                </tr>
+										                <tr >
+										                	<td><button type="button" class="btn btn-primary">Cotizar</button></td>
+										                	<td></td>
+										                </tr>
+									              </tbody>
+								            </table>
+								        </div>
+								    </div>
+			             		 </div>
+		           			 </div>
+		           			  <!--  -->
+		           		</div>
+		           	</div>
+		            </div>
+		              <div class="tab-pane fade" id="cotizar">
+		                
+		              </div>
+		              <div class="tab-pane fade" id="reservar">
+		                
+		              </div>
               
             </div>
           </div>
@@ -300,7 +338,7 @@
 			<!--Fin cotizar-->
 			
 			
-			<div class="footer">
+			<div id="footer">
 							
 				
 							<a href="index.html">Inicio</a>
@@ -312,11 +350,10 @@
 							<a href="index.html">Sucursales</a>
 							|
 							<a href="index.html">Promociones</a>
-	
-					 
-					 		
-
 			</div>
+
+
+
 						  						
 			
 				
@@ -330,5 +367,10 @@
 
 
 		</div>
+
+		$('#link-cotizar a').click(function (e) {
+		  e.preventDefault();
+		  $(this).tab('show');
+		})
 	</body>
 <html>  
