@@ -49,8 +49,11 @@ a.main-nav-item:hover,a.main-nav-item-active, .navbar .nav li.dropdown.open > .d
 #details-catalogo{
 	margin-left: 30px;
 }
+	#details-catalogo i{
+		margin-right: 10px;
+	}
 #footer{
-<<<<<<< HEAD
+
 	min-height: 100px;
 	margin-top: 20px;
 	padding: 10px 0;
@@ -61,25 +64,12 @@ a.main-nav-item:hover,a.main-nav-item-active, .navbar .nav li.dropdown.open > .d
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
     border-radius: 0px;
+    color: #999999;
 
 }
 #footer a{
-	color: #e7e7e7;
-=======
-	margin-top: 20px;
-	padding: 10px 0;
-text-align:center;
-font-size: .9em;
-color: #212121;
-background: #e7e7e7;
--webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-          border-radius: 5px;
+	color: #999999;
 
-}
-#footer a{
-	color: #212121;
->>>>>>> 61536b234fce5c4b4cee489f994b409a2081e89f
 
 }
 
@@ -220,3 +210,5 @@ border-top: white 1px solid;
 	margin-left: 10px;
 
 }
+
+
