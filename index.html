@@ -33,7 +33,7 @@
 		                      <a id="drop1" href="nosotros.html" role="button" class="main-nav-item" >NOSOTROS</a>
 		                    </li>
 		                    <li class="dropdown">
-		                      <a href="flota.html" id="drop2" role="button" class="main-nav-item">FLOTA</a>             
+		                      <a href="#flota" id="drop2" role="button" class="main-nav-item">FLOTA</a>             
 		                    </li>
 		                    <li class="dropdown">
 		                      <a href="locaciones.html" id="drop2" role="button" class="main-nav-item">LOCACIONES</a>
@@ -41,13 +41,8 @@
 		                   
 		                  </ul>
 		                  <ul class="nav pull-right">
-		                    <li id="fat-menu" class="dropdown">
-		                      <a href="#" id="drop3" role="button" class="dropdown-toggle main-nav-item" data-toggle="dropdown">Atenci&oacute;n a clientes <b class="caret"></b></a>
-		                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
-		                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#contactanos-modal" data-toggle="modal">Llamanos</a></li>
-		                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#contactanos-modal" data-toggle="modal">Contactanos</a></li>
-		                      	                       
-		                      </ul>
+		                    <li id="fat-menu" class="">
+		                      <a href="#contactanos-modal" id="" role="button" class="main-nav-item" data-toggle="modal" data-toggle="tooltip" title="Contactanos">Cont&aacute;ctanos</a>		                      
 		                    </li>
 		                  </ul>
 		                  			<!-- Button to trigger modal -->
@@ -112,6 +107,7 @@
 			</div>
 			<!--Inicio cotizar-->
 			<div class="row">
+				<a name="flota"></a>
 				<div class="span12" id="tabs-border">
 		            <ul id="flota-header" class="nav nav-tabs">
 		              <li class="active"><a href="#flota" data-toggle="tab">Flota</a></li>
@@ -167,9 +163,9 @@
 										                <tr>
 										                 	<td>Equipaje</td>
 										                    <td>4 <i class="icon-briefcase"></td>
-										                </tr>
+										                </tr>  
 										                 <tr >
-										                	<td><a class="btn" href="#cotizar" id="link-cotizar">Link</a>
+										                	<td><a href="#" onClick="javascript:nextTab()" class="btn btn-middle btn-primary" id="last">Cotizar</a></td>
 </td>
 										                	<td></td>
 										                </tr>
@@ -321,7 +317,7 @@
 		           	</div>
 		            </div>
 		              <div class="tab-pane fade" id="cotizar">
-		                
+		                hola,soy 
 		              </div>
 		              <div class="tab-pane fade" id="reservar">
 		                
@@ -356,7 +352,20 @@
 
 						  						
 			
-				
+				<script> 
+					function nextTab() {
+					    var e = $('#flota-header li.active').next().find('a[data-toggle="tab"]');
+					    if (e.length > 0) {
+					        e.click();
+					    }
+					}
+					function prevTab() {
+					    var e = $('#flota-header li.active').prev().find('a[data-toggle="tab"]');
+					    if (e.length > 0) {
+					        e.click();
+					    }
+					}
+				</script>
 				
 
 
@@ -366,11 +375,6 @@
 
 
 
-		</div>
-
-		$('#link-cotizar a').click(function (e) {
-		  e.preventDefault();
-		  $(this).tab('show');
-		})
+		</div>		
 	</body>
 <html>  
