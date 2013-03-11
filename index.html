@@ -341,84 +341,162 @@
 		            </div>
 		              <div class="tab-pane fade" id="cotizar">
 
+		              	
 		              	<div class="row">
-		              		<div class="span5 offset1 cotizar-padding">
-			              		<form>
-								  <div class="span4">
-								    <label>Recoger</label>
-								    <input type="text" placeholder="Cuernavaca,centro">
-								   </div> 
-								    <div class="span2">
-									    <label>Fecha</label>
-									    <div class="input-append date" id="dp3" data-date="" data-date-format="dd-mm-yyyy">
-				  							<input class="input-small" type="text" value="">
-				  								<span class="add-on"><i class="icon-calendar"></i></span>
-										</div>
-								   </div>
-								   <div class="span2">
-								   		 <label>Hora</label>
-									    <div class="bootstrap-timepicker">
-								            <input id="timepicker3" type="text" class="input-small">
-								        </div>
-								    </div>
-							</div>
-							<div class="span5 cotizar-padding">
-			              		<div class="span4">
-								    <label>Devolver</label>
-								    <input type="text" placeholder="Cuernavaca,centro">
-								   </div> 
-								    <div class="span2">
-									    <label>Fecha</label>
-									    <div class="input-append date" id="dp4" data-date="" data-date-format="dd-mm-yyyy">
-				  							<input class="input-small" type="text" value="">
-				  								<span class="add-on"><i class="icon-calendar"></i></span>
-										</div>
-								   </div>
-								   <div class="span2">
-								   		 <label>Hora</label>
-									    <div class="bootstrap-timepicker">
-								            <input id="timepicker3" type="text" class="input-small">
-								            <input type="submit" class="btn btn-primary">
-								        </div>
-								    </div>
-								    <div id="boton-precio"> </div>
-							 </form>
+			              	<div class="span12">
 
-							</div>
-						</div><!--fin row-->
-						<div class="row">
+			              		<div class="row">
+			              			<div class="span5 well" >
 
-							<div class="span5 offset1">
-								<table class="table">
-				              <thead>
-				                <tr>
-				                  <th>Concepto</th>
-				                  <th>Tarifa</th>
-				                  <th>Subtotal</th>
-				                </tr>
-				              </thead>
-				              <tbody>
-				                <tr>
-				                  <td>1</td>
-				                  <td>Mark</td>
-				                  <td>Otto</td>
-				                </tr>
-				                <tr>
-				                  <td>2</td>
-				                  <td>Jacob</td>
-				                  <td>Thornton</td>
-				                </tr>
-				                <tr>
-				                  <td>3</td>
-				                  <td>Larry</td>
-				                  <td>the Bird</td>
-				                </tr>
-				              </tbody>
-				            </table>
-							</div>
-						</div>	
-		                
-		              </div><!--tab cotizar-->
+					              		<div class="span4">
+										    <h4>Recoger</h4>
+										    <input type="text" placeholder="Cuernavaca,centro">
+										</div> 
+										<div class="span2">
+											<label>Fecha</label>
+											    <div class="input-append date" id="dp3" data-date="" data-date-format="dd-mm-yyyy">
+							  						<input class="input-small" type="text" value="">
+							  						<span class="add-on"><i class="icon-calendar"></i></span>
+												</div>
+										</div>
+										<div class="span2">
+										   	<label>Hora</label>
+											<div class="bootstrap-timepicker">
+										        <input id="timepicker3" type="text" class="input-small">
+										    </div>
+										</div>
+
+										
+										
+										
+
+										<div class="span4">
+										    <h4>Entregar</h4>
+										    <input type="text" placeholder="Cuernavaca,centro">
+										</div> 
+										<div class="span2">
+											<label>Fecha</label>
+											    <div class="input-append date" id="dp4" data-date="" data-date-format="dd-mm-yyyy">
+							  						<input class="input-small" type="text" value="">
+							  						<span class="add-on"><i class="icon-calendar"></i></span>
+												</div>
+										</div>
+										<div class="span2">
+										   	<label>Hora</label>
+											<div class="bootstrap-timepicker">
+										        <input id="timepicker3" type="text" class="input-small">
+										    </div>
+										</div>
+
+
+										<div class="span6">
+											<button type="submit" class="btn btn-primary">Calcular</button>
+										</div>
+
+
+					              	</div><!--fin span5-->
+
+					              	<div class="span6">
+
+					              		<table class="table">
+							              <thead>
+							                <tr>
+							                  <th>Concepto</th>
+							                  <th>Tarifa</th>
+							                  <th>Subtotal</th>
+							                </tr>
+							              </thead>
+							              <tbody>
+							                <tr>
+							                  <td>2 dia</td>
+							                  <td> 575</td>
+							                  <td>1150</td>
+							                </tr>
+							                <tr>
+							                  <td>1 semana</td>
+							                  <td>3200</td>
+							                  <td>3200</td>
+							                </tr>
+							                <tr class="warning">
+							                  <td></td>
+							                  <td>Total</td>
+							                  <td>4350</td>
+							                </tr>
+							              </tbody>
+							            </table>
+					              	</div>
+
+
+					              	<div class="span6">
+					              		<div class="accordion" id="accordion2">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#acordion-tarifas">
+        Nuestras tarifas incluyen:
+      </a>
+    </div>
+    <div id="acordion-tarifas" class="accordion-body collapse in">
+      <div class="accordion-inner">
+      	<ul>
+      		<li>Kilometraje Ilimitado</li>
+      		<li>Seguro de Da&ntilde;os por Colisi&oacute;n</li>
+      		<li>Seguro Contra Robo</li>
+      		<li>Seguro de Da&ntilde;os Contra Terceras Personas</li>
+      		<li>Seguro de Ocupantes o Gastos M&eacute;dicos</li>
+      		<li>IVA Impuestos Mexicanos Incluidos</li>
+      	</ul>
+        
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+        Requisitos
+      </a>
+    </div>
+    <div id="collapseTwo" class="accordion-body collapse">
+      <div class="accordion-inner">
+        
+      	<ul>
+      		<li>Ser mayor de 21 a&ntilde;os</li>
+      		<li>Tarjeta de credito</li>
+      		<li>Identificacion oficial</li>
+      		<li>Licencia de manejo vigente</li>
+      	</ul>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+					              	</div>
+
+					              	
+
+
+					            </div> <!--fin row--> 
+
+
+
+
+
+
+
+
+				              	
+			              	</div><!--fin span12-->
+			            </div> <!--fin row-->
+
+		              	
+		              </div><!--cierre tab cotizar-->
 
 
 		              <div class="tab-pane fade" id="reservar">
