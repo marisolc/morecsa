@@ -50,6 +50,7 @@ a.main-nav-item:hover,a.main-nav-item-active, .navbar .nav li.dropdown.open > .d
 	margin-left: 30px;
 }
 #footer{
+<<<<<<< HEAD
 	min-height: 100px;
 	margin-top: 20px;
 	padding: 10px 0;
@@ -64,6 +65,21 @@ a.main-nav-item:hover,a.main-nav-item-active, .navbar .nav li.dropdown.open > .d
 }
 #footer a{
 	color: #e7e7e7;
+=======
+	margin-top: 20px;
+	padding: 10px 0;
+text-align:center;
+font-size: .9em;
+color: #212121;
+background: #e7e7e7;
+-webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+
+}
+#footer a{
+	color: #212121;
+>>>>>>> 61536b234fce5c4b4cee489f994b409a2081e89f
 
 }
 
@@ -126,7 +142,10 @@ a.main-nav-item:hover,a.main-nav-item-active, .navbar .nav li.dropdown.open > .d
 
 }
 
+
 #flota-header, #footer{
+
+
 	margin-bottom: 0px;
 padding-left:10px;
 	color: #ffffff;
@@ -191,5 +210,13 @@ border-top: white 1px solid;
 }
 #flota-header li.active a{
 	color: #212121;
+
+
+.cotizar-padding{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#boton-precio{
+	margin-left: 10px;
 
 }
